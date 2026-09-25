@@ -64,12 +64,12 @@ button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(-
 
 <script>
 // NWS ID : USGS ID (blank = none)
-const SITES = ("amok2:03610200,apxk2:03320500,bahk2:,bark2:,bdpm7:,bmmi2:05595700,boni2:05595860,brki2:,broi2:03378000,bsii2:05595765,"+
-"calk2:03320000,cari2:03381495,cdzk2:03438000,cfmi2:05595820,ciri2:,clrm7:07062000,codi2:,comm7:,cpgm7:07020850,crdm7:,"+
-"crri2:03382100,dkli2:,dnzm7:07068000,eddi2:03384450,evvi3:03322000,fmni2:03612000,fskm7:,ftbi3:03322011,gcrm7:07021020,gcti2:,"+
+const SITES = ("amok2:03610200,apxk2:03320500,bahk2:,bark2:,bdpm7:,bmmi2:05595700,boni2:05595860,broi2:03378000,bsii2:05595765,"+
+"calk2:03320000,cari2:03381495,cdzk2:03438000,cfmi2:05595820,ciri2:,clrm7:07062000,codi2:,comm7:,cpgm7:07020850,"+
+"crri2:03382100,dkli2:,dnzm7:07068000,eddi2:03384450,evvi3:03322000,fmni2:03612000,fskm7:,ftbi3:03322011,"+
 "gdti2:,goli2:03384500,hbbm7:,henk2:03322190,hkmk2:,hlbk2:03437495,hlhk2:03437480,hlwk2:03437370,hpkk2:03437500,kydk2:,"+
 "lbfm7:07068510,lgli2:,lprm7:07062500,lrdm7:07043500,lvmk2:03319885,mcoi2:05597500,mcpk2:03611260,mocm7:,mtvi3:,muri2:05599490,"+
-"murk2:03610000,nbgi3:03304300,nhri3:03378500,nmdm7:07024175,onyk2:03383000,owbk2:,pahk2:03611000,pazm7:07037500,pclm7:,plmi2:05597000,"+
+"nbgi3:03304300,nhri3:03378500,nmdm7:07024175,onyk2:03383000,owbk2:,pahk2:03611000,pazm7:07037500,pclm7:,plmi2:05597000,"+
 "pnti3:03376500,ppbm7:07063000,prdk2:03316500,rcpk2:03316645,rndi2:,rrlm7:,sabm7:,scpm7:07020550,shni2:03381700,smli2:03399801,"+
 "sptk2:03321500,thbi2:07022000,unwk2:03322420,vbsm7:07067500,vnbm7:07067000,wadi3:03378550,wlmm7:07062575,wnsi3:03376300,wppm7:07039000,wrci2:05595730,"+
 "wyni2:03380500,zcrm7:07021000").split(",").map(s=>{const [n,u]=s.split(":");return {id:n.toUpperCase(),usgs:u||""}});
